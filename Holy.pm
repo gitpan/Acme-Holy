@@ -1,4 +1,4 @@
-# $Id: Holy.pm,v 1.4 2003/06/16 02:12:38 ian Exp $
+# $Id: Holy.pm,v 1.5 2003/06/16 02:49:03 ian Exp $
 package Acme::Holy;
 
 use 5.000;
@@ -9,7 +9,7 @@ require DynaLoader;
 
 use vars qw( $VERSION @ISA @EXPORT @EXPORT_OK );
 
-	$VERSION	= '0.01';
+	$VERSION	= '0.02';
 	@ISA		= qw( Exporter DynaLoader );
 	@EXPORT		= qw( holy                );
 	@EXPORT_OK	= qw( blessed divine hallowed consecrated sacred sacrosanct );
@@ -34,6 +34,17 @@ Acme::Holy - Test whether references are blessed.
   
   print holy( $obj );                           # prints 'Some::Class'
   print ( holy [] ? 'object' : 'not object' );  # prints 'not object'
+
+
+=head1 WARNING
+
+This module is a classic case of reinventing the wheel and not enough
+RTFM. Unless you really like having terms such as C<holy> in your code, you
+should use the official "holy" implementation now found in the Perl core:
+L<Scalar::Util>. There you will find the C<blessed> function which behaves
+identically to C<holy()>.
+
+... Oh well, on with the show ...
 
 
 =head1 DESCRIPTION
@@ -113,8 +124,8 @@ Thanks to David Cantrell <david@cantrell.org.uk> for suggesting this module.
 
 =head1 SEE ALSO
 
-L<bless|perlfunc/bless>, L<perlboot>, L<perltoot>, L<perltooc>, L<perlbot>,
-L<perlobj>.
+L<Scalar::Util> (oops!), L<bless|perlfunc/bless>, L<perlboot>, L<perltoot>,
+L<perltooc>, L<perlbot>, L<perlobj>.
 
 
 =head1 AUTHOR
