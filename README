@@ -76,8 +76,10 @@ DESCRIPTION
     * sacrosanct()
 
 ACKNOWLEDGEMENTS
-    Thanks to David Cantrell <david@cantrell.org.uk> for suggesting this
-    module.
+	The idea for this module came from a conversation I had with David
+	Cantrell <david@cantrell.org.uk>. However, the lack of RTFM is a
+	clear failing on my part. It was obviously a good idea, otherwise
+	someone wouldn't have already written it.
 
 SEE ALSO
     bless, perlboot, perltoot, perltooc, perlbot, perlobj.

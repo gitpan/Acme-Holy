@@ -9,7 +9,7 @@ require DynaLoader;
 
 use vars qw( $VERSION @ISA @EXPORT @EXPORT_OK );
 
-	$VERSION	= '0.02';
+	$VERSION	= '0.03';
 	@ISA		= qw( Exporter DynaLoader );
 	@EXPORT		= qw( holy                );
 	@EXPORT_OK	= qw( blessed divine hallowed consecrated sacred sacrosanct );
@@ -119,7 +119,10 @@ The following aliases are supported:
 
 =head1 ACKNOWLEDGEMENTS
 
-Thanks to David Cantrell <david@cantrell.org.uk> for suggesting this module.
+The idea for this module came from a conversation I had with David Cantrell
+<david@cantrell.org.uk>. However, the lack of RTFM is a clear failing on
+my part. It was obviously a good idea, otherwise someone wouldn't have
+already written it.
 
 
 =head1 SEE ALSO
